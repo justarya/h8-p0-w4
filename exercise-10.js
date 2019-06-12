@@ -1,6 +1,7 @@
 function changeMe(arr) {
   // you can only write your code here!
   for (let i = 0; i < arr.length; i++) {
+    if(arr[i][3] === undefined) arr[i][3] = 'Invalid Birth Year';
     let obj = {
       firstName: arr[i][0],
       lastName: arr[i][1],
